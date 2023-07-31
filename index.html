@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Journal</h1>
+    </header>
+    <main>
+        <div class="journal-entry">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="entry">Journal Entry:</label>
+            <textarea id="entry" rows="5" required></textarea>
+
+            <button onclick="saveEntry()">Save Entry</button>
+        </div>
+
+        <div class="my-journal-entries">
+            <h2>My Journal Entries</h2>
+            <ul id="entries-list">
+                <!-- Entries will be dynamically added here -->
+            </ul>
+        </div>
+    </main>
+  <h4 align="center">by Elite Performance Technologies</h4>
+    <script src="script.js"></script>
+</body>
+</html>
